@@ -1,10 +1,9 @@
 var BinarySearchTree = function(value) {
-  this.treeDepth = [4,2]
-  var tracker
+  var tracker;
   var obj = {
     value: value,
-    leftCounter : 0,
-    rightCounter : 0,
+    leftCounter: 0,
+    rightCounter: 0,
     left: {
       //value: 4
       //depth: 0 + if(parent + 1);
@@ -59,7 +58,7 @@ binarySearchTreeMethods.onBalance = function(node) {
   if (node.right.value / node.left.value >= 2 || node.left.value / node.right.value >= 2) {
     return node.value;
   }
-}
+};
 
 binarySearchTreeMethods.contains = function(findThis) {
   if (this.value === findThis) {
